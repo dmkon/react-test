@@ -1,5 +1,5 @@
 {
-  "name": "test-proj",
+  "name": "react-test",
   "version": "1.0.0",
   "description": "test project",
   "main": "index.js",
@@ -12,18 +12,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rainman161/test.git"
+    "url": "git+https://github.com/dmkon/react-test.git"
   },
   "keywords": [
     "test",
     "study"
   ],
-  "author": "Vladilen",
+  "author": "Dmitri Kondramachine",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rainman161/test/issues"
+    "url": "https://github.com/dmkon/react-test/issues"
   },
-  "homepage": "https://github.com/rainman161/test#readme",
+  "homepage": "https://github.com/dmkon/react-test#readme",
   "devDependencies": {
     "babel-core": "^6.13.2",
     "babel-eslint": "^6.1.2",
@@ -46,6 +46,8 @@
   },
   "dependencies": {
     "react": "^15.6.2",
-    "react-dom": "^15.6.2"
+    "react-dom": "^15.6.2",
+    "react-router": "^3.2.0",
+    "react-router-dom": "^4.2.2"
   }
 }

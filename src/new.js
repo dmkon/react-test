@@ -6,20 +6,11 @@ export default class NewComponent extends Component {
         super(props);
     }
 
-    renderItem(item, idx) {
-        // console.log('Item:', item);
-        // console.log('Index:', idx);
-        return (
-            <li key={idx}><b>{item.text}</b>-{item.id}</li>
-        );
-    }
-
     render() {
-        // console.log('This.', this.props.array);
         return (
-            <ul>
-                {this.props.array.map(this.renderItem.bind(this))}
-            </ul>
+            <div>
+                <h3 style={{'color': 'blue'}}>New component</h3>
+            </div>
         );
     }
 }
