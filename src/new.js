@@ -4,28 +4,22 @@ export default class NewComponent extends Component {
 
     constructor(props) {
         super(props);
-        console.log('Constructor');
     }
 
-    componentWillMount() {
-        console.log('componentWillMount');
-    }
-
-    componentDidMount() {
-        console.log('componentDidMount');
-    }
-
-    componentWillUnmount() {
-        console.log('componentWillUnmount');
+    renderItem(item, idx) {
+        // console.log('Item:', item);
+        // console.log('Index:', idx);
+        return (
+            <li key={idx}><b>{item.text}</b>-{item.id}</li>
+        );
     }
 
     render() {
-        console.log('render');
+        // console.log('This.', this.props.array);
         return (
-            <div style={{'backgroundColor': 'red'}}>
-                <h3>New Component</h3>
-                <p>{this.props.text}</p>
-            </div>
+            <ul>
+                {this.props.array.map(this.renderItem.bind(this))}
+            </ul>
         );
     }
 }
